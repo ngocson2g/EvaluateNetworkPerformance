@@ -1,0 +1,8 @@
+perl v_throughput_in_granularity.pl out.tr 0 5 0.15 > out-tcp0-2.tr
+perl v_throughput_in_granularity.pl out.tr 1 6 0.15 > out-tcp1-2.tr
+perl v_throughput_in_granularity.pl out.tr 2 7 0.15 > out-tcp2-2.tr
+perl v_throughput_in_granularity.pl out.tr 3 6 0.15 > out-cbr-2.tr
+
+gnuplot
+plot 'out-tcp0-2.tr' w lines,'out-tcp1-2.tr' w lines, 'out-tcp2-2.tr' w
+lines, 'out-cbr-2.tr' w lines

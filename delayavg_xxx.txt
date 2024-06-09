@@ -1,0 +1,2 @@
+–Để nguyên dấu “#” tại dòng có dấu (*) (tất nhiên phải bỏ cả 4 ký tự “#(*)”
+–Bỏ các dấu “#” ở đầu 5 dòng bên dưới dòng có đánh dấu “#(**)” nếu có
