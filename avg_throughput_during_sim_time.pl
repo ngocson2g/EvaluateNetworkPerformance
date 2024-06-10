@@ -1,5 +1,5 @@
 # Type: perl avg_throughput_during_sim_time.pl <trace file> <flow id> <required node>
-# perl avg_throughput_during_sim_time.pl chapter5_sample1.tr 0 5
+# perl avg_throughput_during_sim_time.pl out.tr 0 5
 $infile = $ARGV[0];
 $flow_id = $ARGV[1];
 $tonode = $ARGV[2];
