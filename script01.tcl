@@ -106,7 +106,7 @@ $ns at 10.8 "$ftp2 stop"
 #udp-cbr-null
 set udp [new Agent/UDP]
 $ns attach-agent $n1 $udp
-$udp set fid_ 2
+$udp set fid_ 3
 
 set null [new Agent/Null]
 $ns attach-agent $n6 $null
