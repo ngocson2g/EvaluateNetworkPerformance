@@ -1,5 +1,5 @@
 # type: perl avg_delay_during_sim_time.pl <trace file> <flow id> <source node> <dest node>
-# perl avg_delay_during_sim_time.pl chapter5_sample1.tr 0 0 5
+# perl avg_delay_during_sim_time.pl out.tr 0 0 5
 $infile = $ARGV[0];
 $flow = $ARGV[1];
 $src = $ARGV[2];
