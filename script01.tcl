@@ -1,10 +1,10 @@
 # Initialize the NS simulator
 set ns [new Simulator]
 
-$ns color 1 Red
-$ns color 2 Green
-$ns color 3 Blue
-$ns color 4 Yellow
+$ns color 0 Red
+$ns color 1 Green
+$ns color 2 Blue
+$ns color 3 Yellow
 
 # Set up trace files 
 set nf [open out.nam w]
@@ -61,7 +61,7 @@ $ns queue-limit $n3 $n4 50
 set tcp0 [new Agent/TCP]
 $tcp0 set window_ 32
 $ns attach-agent $n0 $tcp0
-$tcp0 set fid_ 1
+$tcp0 set fid_ 0
 
 set sink0 [new Agent/TCPSink]
 $ns attach-agent $n5 $sink0
@@ -76,7 +76,7 @@ $ns at 10.4 "$ftp0 stop"
 set tcp1 [new Agent/TCP]
 $tcp1 set window_ 64
 $ns attach-agent $n1 $tcp1
-$tcp1 set fid_ 2
+$tcp1 set fid_ 1
 
 set sink1 [new Agent/TCPSink]
 $ns attach-agent $n6 $sink1
@@ -91,7 +91,7 @@ $ns at 10.6 "$ftp1 stop"
 set tcp2 [new Agent/TCP]
 $tcp2 set window_ 16
 $ns attach-agent $n2 $tcp2
-$tcp2 set fid_ 3
+$tcp2 set fid_ 2
 
 set sink2 [new Agent/TCPSink]
 $ns attach-agent $n7 $sink2
@@ -106,7 +106,7 @@ $ns at 10.8 "$ftp2 stop"
 #udp-cbr-null
 set udp [new Agent/UDP]
 $ns attach-agent $n1 $udp
-$udp set fid_ 4
+$udp set fid_ 2
 
 set null [new Agent/Null]
 $ns attach-agent $n6 $null
